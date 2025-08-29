@@ -69,8 +69,8 @@ export function Hero() {
           Contact US
         </a>
       </Container>
-      <Container className="pb-16 text-center">
-        <div className="mt-36">
+      <Container className="py-16 text-center bg-white">
+        <div className="mt-0">
           <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
             AI-First Product Engineering Partner
           </p>

@@ -3,7 +3,7 @@ import letTalkImg from "@/images/lets-talk-bg.jpg";
 
 export function ClosingPoster() {
   return (
-    <div className="pt-16 sm:pt-24 ">
+    <div className="pt-0 sm:pt-0">
       <div
         className="relative isolate overflow-hidden  px-6 py-24 sm:px-24 xl:py-32"
         style={{
