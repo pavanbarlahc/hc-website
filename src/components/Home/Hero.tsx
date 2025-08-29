@@ -8,7 +8,6 @@ import logoTransistor from "@/images/logos/transistor.svg";
 import logoTuple from "@/images/logos/tuple.svg";
 import HeroBackgroud from "@/images/home-bg.jpg";
 
-
 const aiPartners = [
   [
     { name: "Transistor", logo: logoTransistor },
@@ -26,7 +25,7 @@ export function Hero() {
   return (
     <>
       <Container
-        className="pt-20 pb-48 text-center lg:pt-48"
+        className="pt-48 pb-48 text-center lg:pt-48"
         style={{
           backgroundImage: `url(${HeroBackgroud.src})`,
           backgroundSize: "cover",

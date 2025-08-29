@@ -1,4 +1,6 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"; // Assuming you use react-icons
+import logoMirage from "@/images/logos/footerLogo.png";
+import Image from "next/image";
 
 const navigation = {
   solutions: [
@@ -96,6 +98,15 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Headquarters & Development Centers */}
           <div className="flex flex-col gap-y-8">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <Image
+                src={logoMirage}
+                alt="Company Logo"
+                className="h-8 w-auto"
+                unoptimized
+              />
+            </a>
             <div>
               <h3 className="text-xl font-semibold">Headquarters</h3>
               <p className="mt-4 font-normal">California</p>
