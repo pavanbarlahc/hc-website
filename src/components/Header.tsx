@@ -8,7 +8,7 @@ import logoMirage from "@/images/logos/navLogo.svg";
 import { NavLink } from "./NavLink";
 
 const navigation = [
-  { name: "Home", href: "/" },
+  // { name: "Home", href: "/" },
   { name: "Services", href: "Service" },
   { name: "About Us", href: "About" },
   // { name: "Life at Humancloud", href: "#" },
@@ -22,9 +22,9 @@ export function Header() {
     <header className="bg-white shadow-lg fixed top-0 w-full z-50">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-20"
       >
-        <a href="#" className="-m-1.5 p-1.5">
+        <NavLink href="/">
           <span className="sr-only">Your Company</span>
           <Image
             src={logoMirage}
@@ -32,7 +32,8 @@ export function Header() {
             className="h-8 w-auto"
             unoptimized
           />
-        </a>
+        </NavLink>
+
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -45,11 +46,7 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <NavLink
-              href={item.href}
-              key={item.name}
-              children={item.name}
-            />
+            <NavLink href={item.href} key={item.name} children={item.name} />
           ))}
           <a
             href="#"

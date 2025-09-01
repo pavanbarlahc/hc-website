@@ -7,6 +7,7 @@ import logoStaticKit from "@/images/logos/statickit.svg";
 import logoTransistor from "@/images/logos/transistor.svg";
 import logoTuple from "@/images/logos/tuple.svg";
 import HeroBackgroud from "@/images/home-bg.jpg";
+import { FadeIn } from "../FadeIn";
 
 const aiPartners = [
   [
@@ -25,7 +26,7 @@ export function Hero() {
   return (
     <>
       <Container
-        className="pt-48 pb-48 text-center lg:pt-64"
+        className="pt-48 pb-32 text-center lg:pt-64 lg:pb-48"
         style={{
           backgroundImage: `url(${HeroBackgroud.src})`,
           backgroundSize: "cover",
@@ -34,14 +35,14 @@ export function Hero() {
         }}
       >
         <h1
-          className="mx-auto max-w-4xl font-display text-xl font-medium tracking-tight text-white sm:text-xl opacity-0 animate-fade-down"
+          className="mx-auto max-w-4xl font-display text-xl tracking-tight font-semibold text-white sm:text-xl opacity-0 animate-fade-down"
           style={{ animation: "fadeDown 0.8s ease-out forwards" }}
         >
           AI-First Product Engineering Partner
         </h1>
 
         <h1
-          className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-white sm:text-7xl mt-5 lg:mt-5 opacity-0 animate-fade-down"
+          className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-white sm:text-7xl mt-4 lg:mt-4 opacity-0 animate-fade-down"
           style={{
             animation: "fadeDown 0.8s ease-out forwards",
             animationDelay: "0.2s",
@@ -51,7 +52,7 @@ export function Hero() {
         </h1>
 
         <p
-          className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-white mb-6 opacity-0 animate-fade-down"
+          className="mx-auto my-4 max-w-2xl text-lg tracking-tight text-white mb-8 opacity-0 lg:mt-4 animate-fade-down"
           style={{
             animation: "fadeDown 0.8s ease-out forwards",
             animationDelay: "0.4s",
@@ -64,41 +65,43 @@ export function Hero() {
 
         <a
           href="#"
-          className="rounded-full bg-[#224fa2] px-6 py-3 text-sm/6 font-semibold text-white shadow-xs hover:bg-[#224fa2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="mx-auto rounded-lg bg-[#224fa2] px-6 py-3 mt-4 lg:mt-4 text-sm/6 font-semibold text-white shadow-xs hover:bg-[#224fa2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
-          Contact US
+          Contact Us
         </a>
       </Container>
-      <Container className="py-16 text-center bg-white">
-        <div className="mt-0">
-          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
-            AI-First Product Engineering Partner
-          </p>
-          <ul
-            role="list"
-            className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
-          >
-            {aiPartners.map((group, groupIndex) => (
-              <li key={groupIndex}>
-                <ul
-                  role="list"
-                  className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
-                >
-                  {group.map((company) => (
-                    <li key={company.name} className="flex">
-                      <Image
-                        src={company.logo}
-                        alt={company.name}
-                        unoptimized
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Container>
+      <FadeIn>
+        <Container className="py-16 text-center bg-white">
+          <div className="mt-0">
+            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+              AI-First Product Engineering Partner
+            </p>
+            <ul
+              role="list"
+              className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
+            >
+              {aiPartners.map((group, groupIndex) => (
+                <li key={groupIndex}>
+                  <ul
+                    role="list"
+                    className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
+                  >
+                    {group.map((company) => (
+                      <li key={company.name} className="flex">
+                        <Image
+                          src={company.logo}
+                          alt={company.name}
+                          unoptimized
+                        />
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Container>
+      </FadeIn>
     </>
   );
 }

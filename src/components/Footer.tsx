@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"; // Assuming you use react-icons
 import logoMirage from "@/images/logos/footerLogo.png";
 import Image from "next/image";
+import { FadeIn } from "./FadeIn";
 
 const navigation = {
   solutions: [
@@ -95,144 +96,148 @@ export function Footer() {
   return (
     <footer className="bg-[#224fa2] text-white">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* Column 1: Headquarters & Development Centers */}
-          <div className="flex flex-col gap-y-8">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <Image
-                src={logoMirage}
-                alt="Company Logo"
-                className="h-8 w-auto"
-                unoptimized
-              />
-            </a>
-            <div>
-              <h3 className="text-xl font-semibold">Headquarters</h3>
-              <p className="mt-4 font-normal">California</p>
-              <p className="mt-2 text-sm text-gray-200">
-                800 West El Camino Real, Suite 180, <br />
-                Mountain View, CA – 94040
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">Development Centers</h3>
-              <p className="mt-4 font-normal">Pune</p>
-              <p className="mt-2 text-sm text-gray-200">
-                A-1102, MontClaire, Baner-Pashan <br />
-                Link Road, Pashan, Pune 411021.
-              </p>
-              <p className="mt-4 font-normal">Hyderabad</p>
-              <p className="mt-2 text-sm text-gray-200">
-                Plot No.50, 1st Floor, Behind Raheja <br />
-                Mindspace, Gafoor Nagar Village, <br />
-                Madhapur, Hyderabad–500081
-              </p>
-            </div>
-          </div>
-
-          {/* Column 2: Contact Us & Careers */}
-          <div className="flex flex-col gap-y-8 md:gap-y-8">
-            <div>
-              <h3 className="text-xl font-semibold">Contact Us</h3>
-              <p className="mt-4 font-normal">Sales:</p>
-              <p className="mt-2 text-sm text-gray-200">
-                sales@humancloud.ltd
-                <br />
-                India: +91 85301 16304
-                <br />
-                US: +1 650 887 7006
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">Customer Care:</h3>
-              <p className="mt-2 text-sm text-gray-200">info@humancloud.ltd</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">Careers:</h3>
-              <p className="mt-2 text-sm text-gray-200">
-                India: +91 84829 37528
-                <br />
-                talent@humancloud.ltd
-              </p>
-            </div>
-          </div>
-
-          {/* Column 3: Quick Links */}
-          <div>
-            <h3 className="text-xl font-semibold">Quick Links</h3>
-            <ul role="list" className="mt-4 space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="text-sm font-normal text-gray-200 hover:text-white"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm font-normal text-gray-200 hover:text-white"
-                >
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm font-normal text-gray-200 hover:text-white"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm font-normal text-gray-200 hover:text-white"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm font-normal text-gray-200 hover:text-white"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm font-normal text-gray-200 hover:text-white"
-                >
-                  Terms & Conditions
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Follow Us & Copyright */}
-          <div>
-            <h3 className="text-xl font-semibold">Follow Us</h3>
-            <div className="mt-4 flex space-x-4">
-              <a href="#" className="text-white hover:text-gray-200">
-                <FaFacebookF className="h-6 w-6" />
+        <FadeIn>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {/* Column 1: Headquarters & Development Centers */}
+            <div className="flex flex-col gap-y-8">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <Image
+                  src={logoMirage}
+                  alt="Company Logo"
+                  className="h-8 w-auto"
+                  unoptimized
+                />
               </a>
-              <a href="#" className="text-white hover:text-gray-200">
-                <FaInstagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white hover:text-gray-200">
-                <FaLinkedinIn className="h-6 w-6" />
-              </a>
+              <div>
+                <h3 className="text-xl font-semibold">Headquarters</h3>
+                <p className="mt-4 font-normal">California</p>
+                <p className="mt-2 text-sm text-gray-200">
+                  800 West El Camino Real, Suite 180, <br />
+                  Mountain View, CA – 94040
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Development Centers</h3>
+                <p className="mt-4 font-normal">Pune</p>
+                <p className="mt-2 text-sm text-gray-200">
+                  A-1102, MontClaire, Baner-Pashan <br />
+                  Link Road, Pashan, Pune 411021.
+                </p>
+                <p className="mt-4 font-normal">Hyderabad</p>
+                <p className="mt-2 text-sm text-gray-200">
+                  Plot No.50, 1st Floor, Behind Raheja <br />
+                  Mindspace, Gafoor Nagar Village, <br />
+                  Madhapur, Hyderabad–500081
+                </p>
+              </div>
             </div>
-            <div className="mt-8 text-sm text-gray-200">
-              <p>&copy; Copyright 2025 – All Rights</p>
-              <p>Reserved by Humancloud, Inc.</p>
+
+            {/* Column 2: Contact Us & Careers */}
+            <div className="flex flex-col gap-y-8 md:gap-y-8">
+              <div>
+                <h3 className="text-xl font-semibold">Contact Us</h3>
+                <p className="mt-4 font-normal">Sales:</p>
+                <p className="mt-2 text-sm text-gray-200">
+                  sales@humancloud.ltd
+                  <br />
+                  India: +91 85301 16304
+                  <br />
+                  US: +1 650 887 7006
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Customer Care:</h3>
+                <p className="mt-2 text-sm text-gray-200">
+                  info@humancloud.ltd
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Careers:</h3>
+                <p className="mt-2 text-sm text-gray-200">
+                  India: +91 84829 37528
+                  <br />
+                  talent@humancloud.ltd
+                </p>
+              </div>
+            </div>
+
+            {/* Column 3: Quick Links */}
+            <div>
+              <h3 className="text-xl font-semibold">Quick Links</h3>
+              <ul role="list" className="mt-4 space-y-4">
+                <li>
+                  <a
+                    href="#"
+                    className="text-sm font-normal text-gray-200 hover:text-white"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-sm font-normal text-gray-200 hover:text-white"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-sm font-normal text-gray-200 hover:text-white"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-sm font-normal text-gray-200 hover:text-white"
+                  >
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-sm font-normal text-gray-200 hover:text-white"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-sm font-normal text-gray-200 hover:text-white"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4: Follow Us & Copyright */}
+            <div>
+              <h3 className="text-xl font-semibold">Follow Us</h3>
+              <div className="mt-4 flex space-x-4">
+                <a href="#" className="text-white hover:text-gray-200">
+                  <FaFacebookF className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-white hover:text-gray-200">
+                  <FaInstagram className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-white hover:text-gray-200">
+                  <FaLinkedinIn className="h-6 w-6" />
+                </a>
+              </div>
+              <div className="mt-8 text-sm text-gray-200">
+                <p>&copy; Copyright 2025 – All Rights</p>
+                <p>Reserved by Humancloud, Inc.</p>
+              </div>
             </div>
           </div>
-        </div>
+        </FadeIn>
       </div>
     </footer>
   );

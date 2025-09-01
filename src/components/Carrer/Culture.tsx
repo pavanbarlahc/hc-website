@@ -20,26 +20,6 @@ export function Culture() {
             <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               {/* Text content */}
               <div className="text-base/7 text-gray-700 lg:max-w-lg my-none">
-                {/* <div className="max-lg:mt-16 lg:col-span-1">
-                  <dl className="mt-6 grid grid-rows-1 gap-x-8 gap-y-4 sm:grid-rows-2 text-center">
-                    <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4 items-center">
-                      <dt className="text-2xl text-gray-600">
-                        industries empowered
-                      </dt>
-                      <dd className="order-first text-9xl tracking-tight text-gray-900">
-                        <span>6+</span>
-                      </dd>
-                    </div>
-                    <div className="flex flex-col gap-y-2 items-center">
-                      <dt className="text-2xl text-gray-600">
-                        faster AI deployment
-                      </dt>
-                      <dd className="order-first text-9xl tracking-tight text-gray-900">
-                        <span>2x</span>
-                      </dd>
-                    </div>
-                  </dl>
-                </div> */}
                 <List className="mt-0 lg:mt-0 lg:w-1/2 lg:min-w-120 lg:pl-4">
                   <ListItem title="Innovation">
                     We explore, experiment, and engineer solutions ahead of the
