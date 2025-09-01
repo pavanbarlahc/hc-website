@@ -10,7 +10,7 @@ export function Hero() {
         aria-hidden="true"
       ></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-20 md:pt-40 md:pb-44">
           {/* Hero content */}
           <div className="max-w-xl mx-auto md:max-w-none md:flex md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-16 md:space-y-0">
@@ -20,17 +20,20 @@ export function Hero() {
               data-aos="fade-right"
             >
               <h1
-                className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-white sm:text-6xl mt-5 lg:mt-5 opacity-0 animate-fade-down"
+                className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-white sm:text-6xl mb-5 lg:mt-5 opacity-0 animate-fade-down"
                 style={{
                   animation: "fadeDown 0.8s ease-out forwards",
                   animationDelay: "0.2s",
                 }}
               >
-                Create stunning web experiences
+                AI-First Services for the Enterprise
               </h1>
               <p className="text-xl text-slate-400 mb-8">
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+                From <b>data foundations</b> to{" "}
+                <b>intelligent user experiences,</b>
+                Humancloud delivers the complete AI lifecycle. We design,
+                deploy, and scale <b>production-ready AI systems</b> that
+                enterprises can trust.
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
@@ -39,7 +42,6 @@ export function Hero() {
                     href="/request-demo"
                   >
                     Request Demo{" "}
-                    
                   </Link>
                 </div>
                 {/* <div>

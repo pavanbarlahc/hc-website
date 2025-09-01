@@ -50,7 +50,9 @@ export function Review() {
       <div className="pt-12 md:pt-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">Employee Voices</h2>
+            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+              Employee Voices
+            </p>
           </div>
         </div>
         <div className="relative mx-auto flex max-w-[94rem] justify-center">
