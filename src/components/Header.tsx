@@ -9,7 +9,8 @@ import { NavLink } from "./NavLink";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "Service" },
+  // { name: "Services", href: "Service" },
+  { name: "Services", href: "#" },
   { name: "About Us", href: "About" },
   // { name: "Life at Humancloud", href: "#" },
   { name: "Carrers", href: "Carrer" },

@@ -5,6 +5,7 @@ import { Hero } from "@/components/Carrer/Hero";
 import { Culture } from "@/components/Carrer/Culture";
 import { Opportunity } from "@/components/Carrer/Opportunity";
 import { Review } from "@/components/Carrer/Review";
+import { ClosingPoster } from "@/components/Carrer/ClosingPoster";
 
 export default function Service() {
   return (
@@ -13,6 +14,7 @@ export default function Service() {
       <Culture />
       <Opportunity />
       <Review />
+      <ClosingPoster />
     </>
   );
 }
