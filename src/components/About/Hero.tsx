@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <div className="bg-white">
       {/* Hero section */}
-      <div className="relative isolate overflow-hidden pt-12 pb-2 sm:pb-2">
+      <div className="relative isolate overflow-hidden pt-12 pb-2 sm:pb-2 lg:p-32">
         <img
           alt=""
           src={HeroBackgroud.src}

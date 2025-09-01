@@ -25,7 +25,7 @@ export function Hero() {
   return (
     <>
       <Container
-        className="pt-48 pb-48 text-center lg:pt-48"
+        className="pt-48 pb-48 text-center lg:pt-64"
         style={{
           backgroundImage: `url(${HeroBackgroud.src})`,
           backgroundSize: "cover",

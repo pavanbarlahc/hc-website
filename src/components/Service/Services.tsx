@@ -9,6 +9,49 @@ export function Services() {
           Core Services
         </p>
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-3">
+            
+          <div className="relative lg:col-span-3 [perspective:2000px]">
+            <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-lg" />
+
+            {/* Flip Container */}
+            <div className="relative h-full w-full [transform-style:preserve-3d] transition-transform duration-700 hover:[transform:rotateY(180deg)]">
+              {/* Front Face */}
+              <div className="absolute inset-0 flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [backface-visibility:hidden]">
+                <img
+                  alt=""
+                  src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg"
+                  className="h-80 object-cover object-left"
+                />
+                <div className="p-10 pt-4">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
+                    AI Product Engineering
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                    From concept to production-ready AI solutions. We design and
+                    build <b>enterprise-grade AI products</b> — copilots,
+                    assistants, and domain-specific applications — that
+                    integrate seamlessly with your business.
+                  </p>
+                </div>
+              </div>
+
+              {/* Back Face — Custom Content */}
+              <div className="absolute inset-0 flex h-full flex-col items-center justify-center overflow-hidden bg-gray-100 p-10 text-center rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <p className="text-xl font-semibold text-gray-800">
+                  Want to learn more?
+                </p>
+                <p className="mt-2 text-sm text-gray-600">
+                  Explore our case studies, team insights, or get in touch with
+                  us for a detailed consultation.
+                </p>
+                <button className="mt-6 rounded-md bg-black px-4 py-2 text-white hover:bg-gray-900 transition">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+
+            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-lg" />
+          </div>
           <div className="relative lg:col-span-3 [perspective:2000px]">
             <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-lg" />
 
@@ -52,92 +95,6 @@ export function Services() {
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-lg" />
           </div>
 
-          <div className="relative lg:col-span-3 [perspective:2000px]">
-            <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-lg" />
-
-            {/* Flip Container */}
-            <div className="relative h-full w-full [transform-style:preserve-3d] transition-transform duration-700 hover:[transform:rotateY(180deg)]">
-              {/* Front Face */}
-              <div className="absolute inset-0 flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [backface-visibility:hidden]">
-                <img
-                  alt=""
-                  src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg"
-                  className="h-80 object-cover object-left"
-                />
-                <div className="p-10 pt-4">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                    AI Product Engineering
-                  </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                    From concept to production-ready AI solutions. We design and
-                    build <b>enterprise-grade AI products</b> — copilots,
-                    assistants, and domain-specific applications — that
-                    integrate seamlessly with your business.
-                  </p>
-                </div>
-              </div>
-
-              {/* Back Face — Custom Content */}
-              <div className="absolute inset-0 flex h-full flex-col items-center justify-center overflow-hidden bg-gray-100 p-10 text-center rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <p className="text-xl font-semibold text-gray-800">
-                  Want to learn more?
-                </p>
-                <p className="mt-2 text-sm text-gray-600">
-                  Explore our case studies, team insights, or get in touch with
-                  us for a detailed consultation.
-                </p>
-                <button className="mt-6 rounded-md bg-black px-4 py-2 text-white hover:bg-gray-900 transition">
-                  Contact Us
-                </button>
-              </div>
-            </div>
-
-            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-lg" />
-          </div>
-
-          <div className="relative lg:col-span-2 [perspective:2000px]">
-            <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-lg" />
-
-            {/* Flip Container */}
-            <div className="relative h-full w-full [transform-style:preserve-3d] transition-transform duration-700 hover:[transform:rotateY(180deg)]">
-              {/* Front Face */}
-              <div className="absolute inset-0 flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [backface-visibility:hidden]">
-                <img
-                  alt=""
-                  src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg"
-                  className="h-80 object-cover object-left"
-                />
-                <div className="p-10 pt-4">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                    AI Product Engineering
-                  </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                    From concept to production-ready AI solutions. We design and
-                    build <b>enterprise-grade AI products</b> — copilots,
-                    assistants, and domain-specific applications — that
-                    integrate seamlessly with your business.
-                  </p>
-                </div>
-              </div>
-
-              {/* Back Face — Custom Content */}
-              <div className="absolute inset-0 flex h-full flex-col items-center justify-center overflow-hidden bg-gray-100 p-10 text-center rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <p className="text-xl font-semibold text-gray-800">
-                  Want to learn more?
-                </p>
-                <p className="mt-2 text-sm text-gray-600">
-                  Explore our case studies, team insights, or get in touch with
-                  us for a detailed consultation.
-                </p>
-                <button className="mt-6 rounded-md bg-black px-4 py-2 text-white hover:bg-gray-900 transition">
-                  Contact Us
-                </button>
-              </div>
-            </div>
-
-            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-lg" />
-          </div>
-
           <div className="relative lg:col-span-2 [perspective:2000px]">
             <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-lg" />
 
@@ -222,6 +179,50 @@ export function Services() {
 
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-lg" />
           </div>
+          <div className="relative lg:col-span-2 [perspective:2000px]">
+            <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-lg" />
+
+            {/* Flip Container */}
+            <div className="relative h-full w-full [transform-style:preserve-3d] transition-transform duration-700 hover:[transform:rotateY(180deg)]">
+              {/* Front Face */}
+              <div className="absolute inset-0 flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [backface-visibility:hidden]">
+                <img
+                  alt=""
+                  src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg"
+                  className="h-80 object-cover object-left"
+                />
+                <div className="p-10 pt-4">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
+                    AI Product Engineering
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                    From concept to production-ready AI solutions. We design and
+                    build <b>enterprise-grade AI products</b> — copilots,
+                    assistants, and domain-specific applications — that
+                    integrate seamlessly with your business.
+                  </p>
+                </div>
+              </div>
+
+              {/* Back Face — Custom Content */}
+              <div className="absolute inset-0 flex h-full flex-col items-center justify-center overflow-hidden bg-gray-100 p-10 text-center rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(0.5rem+1px)] [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <p className="text-xl font-semibold text-gray-800">
+                  Want to learn more?
+                </p>
+                <p className="mt-2 text-sm text-gray-600">
+                  Explore our case studies, team insights, or get in touch with
+                  us for a detailed consultation.
+                </p>
+                <button className="mt-6 rounded-md bg-black px-4 py-2 text-white hover:bg-gray-900 transition">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+
+            <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-lg" />
+          </div>
+
+
           <div className="relative lg:col-span-3 [perspective:2000px]">
             <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-bl-lg" />
 
@@ -262,7 +263,6 @@ export function Services() {
 
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-bl-lg" />
           </div>
-
           <div className="relative lg:col-span-3 [perspective:2000px]">
             <div className="absolute inset-0 rounded-lg bg-white max-lg:rounded-t-4xl lg:rounded-tl-lg" />
 
@@ -305,6 +305,7 @@ export function Services() {
 
             <div className="pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl lg:rounded-tl-lg" />
           </div>
+
           <div
             aria-hidden="true"
             className="absolute inset-x-0 -bottom-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
