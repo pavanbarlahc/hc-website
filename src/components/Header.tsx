@@ -22,7 +22,7 @@ export function Header() {
     <header className="bg-white shadow-lg fixed top-0 w-full z-50">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-20"
+        className="mx-auto flex max-w-8xl items-center justify-between px-6 py-4 lg:px-20"
       >
         <NavLink href="/">
           <span className="sr-only">Your Company</span>
@@ -50,7 +50,7 @@ export function Header() {
           ))}
           <a
             href="#"
-            className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 font-semibold text-white shadow-xs hover:bg-[#224fa2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 font-semibold text-white shadow-xs hover:bg-[#3a67ba] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Contact Us
           </a>
@@ -97,7 +97,7 @@ export function Header() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 font-semibold text-white shadow-xs hover:bg-[#224fa2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 font-semibold text-white shadow-xs hover:bg-[#3a67ba] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Contact Us
                 </a>

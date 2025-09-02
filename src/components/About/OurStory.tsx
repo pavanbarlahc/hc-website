@@ -1,6 +1,8 @@
+import { FadeIn } from "../FadeIn";
+
 export function OurStory() {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-100">
       <main className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10">
@@ -46,7 +48,8 @@ export function OurStory() {
             />
           </div>
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
+            <div className="mx-auto max-w-7xl px-6 pt-36 pb-24 sm:pt-60 lg:px-8 lg:pt-32">
+              <FadeIn>
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-xl">
                   <h1 className="text-6xl tracking-tight text-gray-900">
@@ -131,6 +134,7 @@ export function OurStory() {
                   </div>
                 </div>
               </div>
+              </FadeIn>
             </div>
           </div>
         </div>

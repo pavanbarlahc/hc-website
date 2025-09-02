@@ -3,27 +3,45 @@
 import { createContext, useContext } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 
+// Context to track staggered group
 const FadeInStaggerContext = createContext(false)
 
-const viewport = { once: true, margin: '0px 0px -200px' }
+// Adjust viewport to trigger animations when element is partially visible
+const viewport = { once: true, amount: 0.4 }
 
 export function FadeIn(
   props: React.ComponentPropsWithoutRef<typeof motion.div>,
 ) {
-  let shouldReduceMotion = useReducedMotion()
-  let isInStaggerGroup = useContext(FadeInStaggerContext)
+  const shouldReduceMotion = useReducedMotion()
+  const isInStaggerGroup = useContext(FadeInStaggerContext)
+
+  // Enhanced motion variants
+  const variants = {
+    hidden: {
+      opacity: 0,
+      y: shouldReduceMotion ? 0 : 30,
+      scale: shouldReduceMotion ? 1 : 0.98,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 80,
+        damping: 20,
+        duration: 0.6,
+      },
+    },
+  }
 
   return (
     <motion.div
-      variants={{
-        hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 24 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      transition={{ duration: 0.5 }}
+      variants={variants}
       {...(isInStaggerGroup
         ? {}
         : {
-            initial: 'hidden',
+            initial: "hidden",
             whileInView: 'visible',
             viewport,
           })}
@@ -34,6 +52,7 @@ export function FadeIn(
 
 export function FadeInStagger({
   faster = false,
+  children,
   ...props
 }: React.ComponentPropsWithoutRef<typeof motion.div> & { faster?: boolean }) {
   return (
@@ -42,9 +61,13 @@ export function FadeInStagger({
         initial="hidden"
         whileInView="visible"
         viewport={viewport}
-        transition={{ staggerChildren: faster ? 0.12 : 0.2 }}
+        transition={{
+          staggerChildren: faster ? 0.1 : 0.2,
+        }}
         {...props}
-      />
+      >
+        {children}
+      </motion.div>
     </FadeInStaggerContext.Provider>
   )
 }

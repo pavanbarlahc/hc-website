@@ -5,98 +5,60 @@ import { ZoomOnHoverImage } from "../ZoomOnHoverImg";
 const deployments = [
   {
     id: 1,
-    href: "#",
-    projectName: "ios-app",
     teamName: "AI Product Engineering",
-    status: "offline",
     statusText: "Initiated 1m 32s ago",
     description: "From idea to enterprise AI application development in weeks.",
-    environment: "Preview",
     imageUrl:
       "https://images.pexels.com/photos/8982692/pexels-photo-8982692.jpeg",
   },
   {
     id: 2,
-    href: "#",
-    projectName: "mobile-api",
     teamName: "Machine Learning & Model Training",
-    status: "online",
     statusText: "Deployed 3m ago",
     description:
       "Custom ML models, transformer model development, and embeddings.",
-    environment: "Production",
     imageUrl:
       "https://media.istockphoto.com/id/1310293181/photo/deep-learning-artificial-intelligence-background.jpg?s=1024x1024&w=is&k=20&c=JDZcgcJGPRhBttuZiQY-13PhX0bL2djnVC-WgEWg8XI=",
   },
   {
     id: 3,
-    href: "#",
-    projectName: "tailwindcss.com",
     teamName: "Intelligent UX & Conversational Interfaces",
-    status: "offline",
-    statusText: "Deployed 3h ago",
     description: "AI-powered UX design and adaptive multimodal experiences.",
-    environment: "Preview",
     imageUrl:
       "https://images.pexels.com/photos/221185/pexels-photo-221185.jpeg",
   },
   {
     id: 4,
-    href: "#",
-    projectName: "api.protocol.chat",
     teamName: "Advanced Data Pipeline Design",
-    status: "error",
-    statusText: "Failed to deploy 6d ago",
     description: "AI-ready data pipelines with RAG implementation.",
-    environment: "Preview",
     imageUrl:
       "https://images.pexels.com/photos/7174650/pexels-photo-7174650.jpeg",
   },
   {
     id: 5,
-    href: "#",
-    projectName: "protocol-web-app",
     teamName: "Retrieval-Augmented Generation (RAG)",
-    status: "online",
-    statusText: "Deployed 1d ago",
     description: "Domain-specific, context-aware AI retrieval.",
-    environment: "Production",
     imageUrl:
       "https://images.pexels.com/photos/7055905/pexels-photo-7055905.jpeg",
   },
   {
     id: 6,
-    href: "#",
-    projectName: "agentic-automation-service",
     teamName: "Agentic Workflow Automation",
-    status: "online",
-    statusText: "Deployed 2h ago",
     description: "Multi-step, self-directed AI processes.",
-    environment: "Production",
     imageUrl:
       "https://images.pexels.com/photos/5816299/pexels-photo-5816299.jpeg",
   },
   {
     id: 7,
-    href: "#",
-    projectName: "ai-quality-assurance",
     teamName: "AI Quality Assurance & Safety Audits",
-    status: "offline",
-    statusText: "Initiated 5m ago",
     description: "Ethical AI development and hallucination prevention.",
-    environment: "Preview",
     imageUrl:
       "https://images.pexels.com/photos/33656465/pexels-photo-33656465.jpeg",
   },
   {
     id: 8,
-    href: "#",
-    projectName: "cloud-mlops-service",
     teamName: "Cloud Infrastructure & MLOps",
-    status: "online",
-    statusText: "Deployed 1h ago",
     description: "AI GPU orchestration and zero-downtime AI cloud deployment.",
-    environment: "Production",
     imageUrl:
       "https://images.pexels.com/photos/4692171/pexels-photo-4692171.jpeg",
   },
@@ -104,13 +66,13 @@ const deployments = [
 
 export function Capability() {
   return (
-    <div className="relative isolate overflow-hidden bg-white py-0 sm:py-8">
+    <div className="relative isolate overflow-hidden bg-black py-0 sm:py-8">
       <FadeIn>
         <div className="mx-auto max-w-3xl px-6 lg:text-center">
-          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
             Engineer AI Systems That Work in the Real World
           </p>
-          <p className="mt-6 text-lg/8 text-gray-700">
+          <p className="mt-6 text-lg/8 text-white">
             Humancloud combines <b>Generative AI innovation</b> with robust
             engineering — delivering solutions that integrate seamlessly into
             your business. From <b>AI-ready data pipelines</b> to{" "}
@@ -123,7 +85,7 @@ export function Capability() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
-          <div className="max-w-lg text-base/7 text-gray-600 lg:col-span-4">
+          <div className="max-w-lg text-base/7 text-white lg:col-span-4">
             <svg
               aria-hidden="true"
               className="absolute -top-160 left-1 -z-10 h-256 w-702 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)] stroke-gray-900/10"
@@ -147,11 +109,11 @@ export function Capability() {
             </svg>
             <FadeIn>
               <figure className="border-l border-indigo-600 pl-8">
-                <p className="mt-2 mb-4 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+                <p className="mt-2 mb-4 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
                   Capabilities
                 </p>
 
-                <blockquote className="text-xl/8 tracking-tight text-gray-900">
+                <blockquote className="text-xl/8 tracking-tight text-white">
                   <p>
                     Our team includes <b>LLM architects, data engineers,</b> and{" "}
                     <b>prompt engineers</b> — specialists{" "}
@@ -188,13 +150,13 @@ export function Capability() {
                       <div className="flex-none rounded-full bg-gray-100/10 p-1 text-[#224fa2]">
                         <div className="size-2 rounded-full bg-current" />
                       </div>
-                      <h2 className="min-w-0 text-sm/6 font-semibold text-gray-900">
+                      <h2 className="min-w-0 text-sm/6 font-semibold text-white">
                         <span className="truncate">{deployment.teamName}</span>
                       </h2>
                     </div>
                     <div
                       className="mt-1
-                      flex items-center gap-x-2.5 text-xs/5 text-gray-500"
+                      flex items-center gap-x-2.5 text-xs/5 text-white"
                     >
                       <p className="truncate">{deployment.description}</p>
                     </div>
@@ -204,15 +166,10 @@ export function Capability() {
             </ul> */}
             <ul
               role="list"
-              className="mx-auto  grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+              className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
             >
               {deployments.map((deployment) => (
                 <li key={deployment.id}>
-                  {/* <img
-                    alt=""
-                    src={deployment.imageUrl}
-                    className="aspect-14/13 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5"
-                  /> */}
                   <div className="lg:pr-4 group">
                     <div className="relative overflow-hidden rounded-3xl hover:shadow-lg hover:shadow-[#224fa2]/80 transition-shadow duration-300">
                       <img
@@ -222,10 +179,10 @@ export function Capability() {
                       />
                     </div>
                   </div>
-                  <h3 className="mt-2 text-lg/8 font-semibold tracking-tight text-gray-900">
+                  <h3 className="mt-2 text-lg/8 font-semibold tracking-tight text-white">
                     {deployment.teamName}
                   </h3>
-                  <p className="text-sm/6 text-gray-500">
+                  <p className="text-sm/6 text-white">
                     {deployment.description}
                   </p>
                 </li>

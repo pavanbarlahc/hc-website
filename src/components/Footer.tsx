@@ -94,13 +94,13 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-[#224fa2] text-white">
+    <footer className="bg-black text-white">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-16">
         <FadeIn>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* Column 1: Headquarters & Development Centers */}
             <div className="flex flex-col gap-y-8">
-              <a href="#" className="-m-1.5 p-1.5">
+              {/* <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <Image
                   src={logoMirage}
@@ -108,7 +108,7 @@ export function Footer() {
                   className="h-8 w-auto"
                   unoptimized
                 />
-              </a>
+              </a> */}
               <div>
                 <h3 className="text-xl font-semibold">Headquarters</h3>
                 <p className="mt-4 font-normal">California</p>

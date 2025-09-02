@@ -1,3 +1,5 @@
+import { FadeIn } from "../FadeIn";
+
 export function Mission() {
   return (
     // <div className="bg-white">
@@ -98,49 +100,51 @@ export function Mission() {
     //   </div>
     // </div>
 
-    <div className="overflow-hidden bg-white">
+    <div className="overflow-hidden bg-black">
       <div className="relative isolate">
-        <div className="mx-auto max-w-6xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16  px-6 py-16 sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:pt-20 xl:gap-x-20 xl:px-20">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-              className="h-80 w-full flex-none rounded-2xl object-cover lg:aspect-square lg:h-80 lg:max-w-md "
-            />
-            <div className="w-full flex-auto">
-              <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-950 sm:text-5xl">
-                Vision
-              </h2>
-              <p className="mt-6 text-lg/8 text-pretty text-gray-600">
-                To pioneer an AI-first future where intelligent systems deliver
-                value with human alignment, domain understanding, and business
-                reliability.
-              </p>
+        <FadeIn>
+          <div className="mx-auto max-w-6xl sm:px-6 lg:px-8">
+            <div className="mx-auto flex max-w-2xl flex-col gap-16  px-6 py-16 sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:pt-20 xl:gap-x-20 xl:px-20">
+              <img
+                alt=""
+                src="https://media.istockphoto.com/id/2012746941/photo/cyber-security-black-man-and-code-reflection-in-eyewear-hacking-and-software-update-in-office.jpg?s=1024x1024&w=is&k=20&c=zKpXm-yrWdpZ9M7m4KmFwh34pn1qzNWPLjYJcMUlRxk="
+                className="h-80 w-full flex-none rounded-2xl object-cover lg:aspect-square lg:h-80 lg:max-w-md shadow-[#224fa2] hover:shadow-2xl hover:shadow-[#224fa2]/80 transition-shadow duration-300"
+              />
+              <div className="w-full flex-auto">
+                <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+                  Vision
+                </h2>
+                <p className="mt-6 text-lg/8 text-pretty text-white">
+                  To pioneer an AI-first future where intelligent systems
+                  deliver value with human alignment, domain understanding, and
+                  business reliability.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="mx-auto max-w-6xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16  px-6 py-18 sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:pb-20 xl:gap-x-20 xl:px-20">
-            <div className="w-full flex-auto">
-              <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-950 sm:text-5xl">
-                Mission
-              </h2>
-              <p className="mt-6 text-lg/8 text-pretty text-gray-600">
-                To engineer AI-native platforms and tools that combine
-                infrastructure, clean data, and contextual intelligence —
-                helping organizations automate, innovate, and scale responsibly.
-              </p>
+          <div className="mx-auto max-w-6xl sm:px-6 lg:px-8">
+            <div className="mx-auto flex max-w-2xl flex-col gap-16  px-6 py-18 sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:pb-20 xl:gap-x-20 xl:px-20">
+              <div className="w-full flex-auto">
+                <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+                  Mission
+                </h2>
+                <p className="mt-6 text-lg/8 text-pretty text-white">
+                  To engineer AI-native platforms and tools that combine
+                  infrastructure, clean data, and contextual intelligence —
+                  helping organizations automate, innovate, and scale
+                  responsibly.
+                </p>
+              </div>
+              <img
+                alt=""
+                src="https://images.pexels.com/photos/33714908/pexels-photo-33714908.jpeg"
+                className="h-80 w-full flex-none rounded-2xl object-cover lg:aspect-square lg:h-80 lg:max-w-md shadow-[#224fa2] hover:shadow-2xl hover:shadow-[#224fa2]/80 transition-shadow duration-300"
+              />
             </div>
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-              className="h-80 w-full flex-none rounded-2xl object-cover lg:aspect-square lg:h-80 lg:max-w-md"
-            />
           </div>
-        </div>
+        </FadeIn>
 
-        <div
+        {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
         >
@@ -151,7 +155,7 @@ export function Mission() {
             }}
             className="aspect-1318/752 w-329.5 flex-none bg-linear-to-r from-[#9fd6fc] to-[#8680fd] opacity-50"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

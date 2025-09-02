@@ -42,13 +42,17 @@ export function Hero() {
         </h1>
 
         <h1
-          className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-white sm:text-7xl mt-4 lg:mt-4 opacity-0 animate-fade-down"
+          className="mx-auto max-w-5xl font-display text-5xl font-medium tracking-tight text-white sm:text-7xl mt-4 lg:mt-4 opacity-0 animate-fade-down"
           style={{
             animation: "fadeDown 0.8s ease-out forwards",
             animationDelay: "0.2s",
           }}
         >
-          Engineer Intelligent Systems. Deliver AI at Scale.
+          Engineer{" "}
+          <span className="bg-gradient-to-l from-[#224fa2] to-[#1cefff] bg-clip-text text-transparent">
+            Intelligent Systems.
+          </span>{" "}
+          Deliver AI at Scale.
         </h1>
 
         <p
@@ -65,13 +69,13 @@ export function Hero() {
 
         <a
           href="#"
-          className="mx-auto rounded-lg bg-[#224fa2] px-6 py-3 mt-4 lg:mt-4 text-sm/6 font-semibold text-white shadow-xs hover:bg-[#224fa2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="mx-auto rounded-lg bg-[#224fa2] px-6 py-3 mt-4 lg:mt-4 text-sm/6 font-semibold text-white shadow-xs hover:bg-[#3a67ba] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Contact Us
         </a>
       </Container>
       <FadeIn>
-        <Container className="py-16 text-center bg-white">
+        <Container className="py-16 text-center bg-gray-50">
           <div className="mt-0">
             <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
               AI-First Product Engineering Partner

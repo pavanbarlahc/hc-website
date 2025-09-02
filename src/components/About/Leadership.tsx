@@ -1,21 +1,23 @@
 export function Leadership() {
   return (
-    <section className="relative">
+    <section className="relative bg-gray-100 isolate">
       {/* Dark background */}
-      <div
-        className="absolute inset-0 bg-slate-900 pointer-events-none -z-10 [clip-path:polygon(0_0,_5760px_0,_5760px_calc(100%_-_352px),_0_100%)] h-96 md:h-auto md:mb-64"
+      {/* <div
+        className="absolute inset-0 bg-white pointer-events-none -z-10 [clip-path:polygon(0_0,_5760px_0,_5760px_calc(100%_-_352px),_0_100%)] h-96 md:h-auto md:mb-64"
         aria-hidden="true"
-      ></div>
+      ></div> */}
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-10">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10">
-            <h1 className="text-6xl tracking-tight text-white">Leadership</h1>
+            <h1 className="text-6xl tracking-tight text-gray-900">
+              Leadership
+            </h1>
           </div>
 
           {/* Section content */}
-          <div className="max-w-sm mx-auto md:max-w-4xl grid gap-12 md:grid-cols-2 md:gap-x-10 md:gap-y-10 items-start justify-between">
+          <div className="max-w-sm mx-auto md:max-w-3xl grid gap-12 md:grid-cols-2 md:gap-x-10 md:gap-y-10 items-start justify-between">
             {/* 1st article */}
             <article data-aos="fade-up">
               <a className="relative block group mt-8 mb-4" href="#0">
@@ -27,8 +29,6 @@ export function Leadership() {
                   <img
                     className="w-full aspect-square object-cover group-hover:scale-105 transition duration-700 ease-out"
                     src="https://static.wixstatic.com/media/9bda5c_49e3335725c340c0999631b433a99aa9~mv2.png/v1/fill/w_207,h_294,al_c,lg_1,q_85,enc_avif,quality_auto/Frame%201000003146.png"
-                    width={342}
-                    height={342}
                     alt="News 01"
                   />
                 </div>

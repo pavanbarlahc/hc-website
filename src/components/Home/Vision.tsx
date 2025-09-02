@@ -3,11 +3,11 @@ import { ZoomOnHoverImage } from "../ZoomOnHoverImg";
 
 export function Vision() {
   return (
-    <div className="bg-white py-24 sm:py-8 relative isolate">
+    <div className="bg-gray-50 pb-12 relative isolate">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn>
           <div className="mx-auto max-w-3xl lg:text-center">
-            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+            <p className=" text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
               AI-First Product Engineering Partner
             </p>
             <p className="mt-6 text-lg/8 text-gray-700">
@@ -24,7 +24,7 @@ export function Vision() {
         </FadeIn>
 
         <FadeIn>
-          <div className="py-24 sm:py-16 rounded-3xl">
+          <div className="py-12 sm:py-12 rounded-3xl">
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 {/* Image container */}
@@ -33,7 +33,7 @@ export function Vision() {
                     <ZoomOnHoverImage
                       src="https://images.pexels.com/photos/8294678/pexels-photo-8294678.jpeg"
                       alt="AI Illustration"
-                      className="w-full h-auto object-cover rounded-3xl"
+                      className="w-full h-130 object-cover rounded-3xl"
                     />
                   </div>
                 </div>
