@@ -111,7 +111,8 @@ export function Footer() {
               <div className=" sm:col-span-12 lg:col-span-3">
                 <div>{/* <Logo /> */}</div>
                 <div className="text-sm text-gray-600">
-                  &copy; Cruip.com - All rights reserved.
+                  <p>&copy; Copyright 2025 – All Rights</p>
+                  <p>Reserved by Humancloud, Inc.</p>
                 </div>
               </div>
 
