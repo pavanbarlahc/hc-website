@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"; // Assuming you use react-icons
-import logoMirage from "@/images/logos/footerLogo.png";
+import logoMirage from "@/images/logos/navLogo.svg";
 import Image from "next/image";
 import { FadeIn } from "./FadeIn";
 import Link from "next/link";
@@ -109,7 +109,15 @@ export function Footer() {
             >
               {/* 1st block */}
               <div className=" sm:col-span-12 lg:col-span-3">
-                <div>{/* <Logo /> */}</div>
+                <a href="#" className="">
+                  <span className="sr-only">Your Company</span>
+                  <Image
+                    src={logoMirage}
+                    alt="Company Logo"
+                    className="h-8 w-auto"
+                    unoptimized
+                  />
+                </a>
                 <div className="text-sm text-gray-600">
                   <p>&copy; Copyright 2025 – All Rights</p>
                   <p>Reserved by Humancloud, Inc.</p>
