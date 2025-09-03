@@ -50,7 +50,7 @@ export function Header() {
           ))}
           <a
             href="#"
-            className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 font-semibold text-white shadow-xs hover:bg-[#3a67ba] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 text-white shadow-xs hover:bg-[#3a67ba] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Contact Us
           </a>

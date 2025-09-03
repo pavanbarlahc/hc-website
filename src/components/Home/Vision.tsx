@@ -7,10 +7,10 @@ export function Vision() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn>
           <div className="mx-auto max-w-3xl lg:text-center">
-            <p className=" text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+            <p className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
               AI-First Product Engineering Partner
             </p>
-            <p className="mt-6 text-lg/8 text-gray-700">
+            <p className="mt-6 text-gray-700 text-base">
               Humancloud transforms breakthrough AI concepts into secure,
               <b> production-ready AI applications</b> — combining robust{" "}
               <b>data engineering,</b>
@@ -26,14 +26,14 @@ export function Vision() {
         <FadeIn>
           <div className="py-12 sm:py-12 rounded-3xl">
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
-              <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-0 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 {/* Image container */}
-                <div className="lg:pr-4 group">
-                  <div className="relative overflow-hidden rounded-3xl shadow-lg shadow-[#224fa2] hover:shadow-2xl hover:shadow-[#224fa2]/80 transition-shadow duration-300">
-                    <ZoomOnHoverImage
+                <div className="">
+                  <div className="relative overflow-hidden rounded-xl">
+                    <img
                       src="https://images.pexels.com/photos/8294678/pexels-photo-8294678.jpeg"
                       alt="AI Illustration"
-                      className="w-full h-130 object-cover rounded-3xl"
+                      className="w-full h-140 rounded-xl"
                     />
                   </div>
                 </div>
@@ -43,18 +43,18 @@ export function Vision() {
                   <div className="max-lg:mt-16 lg:col-span-1">
                     <dl className="mt-6 grid grid-rows-1 gap-x-8 gap-y-4 sm:grid-rows-2 text-center">
                       <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4 items-center">
-                        <dt className="text-2xl text-gray-600">
+                        <dt className="text-xl text-gray-600">
                           industries empowered
                         </dt>
-                        <dd className="order-first text-9xl tracking-tight text-gray-900">
+                        <dd className="order-first text-8xl tracking-tight text-gray-900">
                           <span>6+</span>
                         </dd>
                       </div>
                       <div className="flex flex-col gap-y-2 items-center">
-                        <dt className="text-2xl text-gray-600">
+                        <dt className="text-xl text-gray-600">
                           faster AI deployment
                         </dt>
-                        <dd className="order-first text-9xl tracking-tight text-gray-900">
+                        <dd className="order-first text-8xl tracking-tight text-gray-900">
                           <span>2x</span>
                         </dd>
                       </div>

@@ -6,10 +6,10 @@ export function ClosingPoster() {
     <div className="pt-0 sm:pt-0">
       <div className="relative isolate overflow-hidden  px-6 py-24 sm:px-24 xl:py-16 bg-[#224fa2]">
         <FadeIn>
-          <h2 className="mx-auto max-w-4xl text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          <h2 className="mx-auto max-w-4xl text-center text-4xl font-semibold tracking-tight text-white sm:text-4xl">
             Your AI Transformation Starts Here
           </h2>
-          <p className="mx-auto mt-6 max-w-lg text-center text-lg text-white">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-white">
             Partner with Humancloud to design, deploy, and scale Generative AI
             applications that are secure, scalable, and built to deliver
             measurable business impact.

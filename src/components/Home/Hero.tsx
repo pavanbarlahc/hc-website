@@ -26,7 +26,7 @@ export function Hero() {
   return (
     <>
       <Container
-        className="pt-48 pb-32 text-center lg:pt-64 lg:pb-48"
+        className="pt-48 pb-32 text-center lg:pt-56 lg:pb-48"
         style={{
           backgroundImage: `url(${HeroBackgroud.src})`,
           backgroundSize: "cover",
@@ -56,7 +56,7 @@ export function Hero() {
         </h1>
 
         <p
-          className="mx-auto my-4 max-w-2xl text-lg tracking-tight text-white mb-8 opacity-0 lg:mt-4 animate-fade-down"
+          className="mx-auto my-4 max-w-2xl text-base tracking-tight text-white mb-8 opacity-0 lg:mt-4 animate-fade-down"
           style={{
             animation: "fadeDown 0.8s ease-out forwards",
             animationDelay: "0.4s",
@@ -75,36 +75,30 @@ export function Hero() {
         </a>
       </Container>
       <FadeIn>
-        <Container className="py-16 text-center bg-gray-50">
-          <div className="mt-0">
-            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
-              AI-First Product Engineering Partner
-            </p>
-            <ul
-              role="list"
-              className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
-            >
-              {aiPartners.map((group, groupIndex) => (
-                <li key={groupIndex}>
-                  <ul
-                    role="list"
-                    className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
-                  >
-                    {group.map((company) => (
-                      <li key={company.name} className="flex">
-                        <Image
-                          src={company.logo}
-                          alt={company.name}
-                          unoptimized
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Container>
+      <Container className="py-20 text-center bg-gray-50 overflow-hidden">
+  <div className="mt-0">
+    <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
+      AI-First Product Engineering Partner
+    </p>
+
+    <div className="relative w-full overflow-hidden mt-8">
+      <ul role="list" className="marquee gap-x-12">
+        {/* duplicate the list back-to-back */}
+        {[...aiPartners.flat(), ...aiPartners.flat()].map((company, i) => (
+          <li key={company.name + i} className="flex px-6">
+            <Image
+              src={company.logo}
+              alt={company.name}
+              unoptimized
+              className="h-12 w-auto"
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</Container>
+
       </FadeIn>
     </>
   );

@@ -51,7 +51,7 @@ export function Culture() {
           </div>
         </div>
 
-        <div
+        {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
         >
@@ -62,7 +62,7 @@ export function Culture() {
             }}
             className="aspect-1318/752 w-329.5 flex-none bg-linear-to-r from-[#9fd6fc] to-[#224fa2] opacity-50"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

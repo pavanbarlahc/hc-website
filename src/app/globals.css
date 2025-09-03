@@ -36,7 +36,7 @@ body {
 }
 
 @theme {
-  /* --font-inter: Inter, sans-serif;
+  --font-inter: Inter, sans-serif;
   --font-mono: Roboto Mono, monospace;
 
   --text-xs: 0.75rem;
@@ -44,7 +44,7 @@ body {
   --text-sm: 0.875rem;
   --text-sm--line-height: 1.5715;
   --text-base: 1rem;
-  --text-base--line-height: 1.5;
+  --text-base--line-height: 1.55;
   --text-base--letter-spacing: -0.017em;
   --text-lg: 1.125rem;
   --text-lg--line-height: 1.5;
@@ -204,7 +204,7 @@ body {
     75% {
       opacity: 1;
     }
-  } */
+  }
   @keyframes infinite-scroll {
     from {
       transform: translateX(0);
@@ -224,4 +224,19 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); /* scroll half since we duplicate items */
+  }
+}
+
+.marquee {
+  display: flex;
+  width: max-content; /* shrink to fit children */
+  animation: marquee 20s linear infinite; /* adjust speed */
 }

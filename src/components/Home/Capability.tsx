@@ -4,12 +4,18 @@ import { ZoomOnHoverImage } from "../ZoomOnHoverImg";
 
 const deployments = [
   {
-    id: 1,
-    teamName: "AI Product Engineering",
-    statusText: "Initiated 1m 32s ago",
-    description: "From idea to enterprise AI application development in weeks.",
+    id: 4,
+    teamName: "Advanced Data Pipeline Design",
+    description: "AI-ready data pipelines with RAG implementation.",
     imageUrl:
-      "https://images.pexels.com/photos/8982692/pexels-photo-8982692.jpeg",
+      "https://images.pexels.com/photos/7174650/pexels-photo-7174650.jpeg",
+  },
+  {
+    id: 5,
+    teamName: "Retrieval-Augmented Generation (RAG)",
+    description: "Domain-specific, context-aware AI retrieval.",
+    imageUrl:
+      "https://images.pexels.com/photos/7055905/pexels-photo-7055905.jpeg",
   },
   {
     id: 2,
@@ -28,19 +34,13 @@ const deployments = [
       "https://images.pexels.com/photos/221185/pexels-photo-221185.jpeg",
   },
   {
-    id: 4,
-    teamName: "Advanced Data Pipeline Design",
-    description: "AI-ready data pipelines with RAG implementation.",
+    id: 7,
+    teamName: "AI Quality Assurance & Safety Audits",
+    description: "Ethical AI development and hallucination prevention.",
     imageUrl:
-      "https://images.pexels.com/photos/7174650/pexels-photo-7174650.jpeg",
+      "https://images.pexels.com/photos/33656465/pexels-photo-33656465.jpeg",
   },
-  {
-    id: 5,
-    teamName: "Retrieval-Augmented Generation (RAG)",
-    description: "Domain-specific, context-aware AI retrieval.",
-    imageUrl:
-      "https://images.pexels.com/photos/7055905/pexels-photo-7055905.jpeg",
-  },
+
   {
     id: 6,
     teamName: "Agentic Workflow Automation",
@@ -49,30 +49,31 @@ const deployments = [
       "https://images.pexels.com/photos/5816299/pexels-photo-5816299.jpeg",
   },
   {
-    id: 7,
-    teamName: "AI Quality Assurance & Safety Audits",
-    description: "Ethical AI development and hallucination prevention.",
-    imageUrl:
-      "https://images.pexels.com/photos/33656465/pexels-photo-33656465.jpeg",
-  },
-  {
-    id: 8,
+    id: 1,
     teamName: "Cloud Infrastructure & MLOps",
     description: "AI GPU orchestration and zero-downtime AI cloud deployment.",
     imageUrl:
       "https://images.pexels.com/photos/4692171/pexels-photo-4692171.jpeg",
   },
+  {
+    id: 8,
+    teamName: "AI Product Engineering",
+    statusText: "Initiated 1m 32s ago",
+    description: "From idea to enterprise AI application development in weeks.",
+    imageUrl:
+      "https://images.pexels.com/photos/8982692/pexels-photo-8982692.jpeg",
+  },
 ];
 
 export function Capability() {
   return (
-    <div className="relative isolate overflow-hidden bg-black py-0 sm:py-8">
+    <div className="relative isolate overflow-hidden bg-black py-8 sm:py-12">
       <FadeIn>
         <div className="mx-auto max-w-3xl px-6 lg:text-center">
-          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
+          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-4xl lg:text-balance">
             Engineer AI Systems That Work in the Real World
           </p>
-          <p className="mt-6 text-lg/8 text-white">
+          <p className="mt-6 text-base text-white">
             Humancloud combines <b>Generative AI innovation</b> with robust
             engineering — delivering solutions that integrate seamlessly into
             your business. From <b>AI-ready data pipelines</b> to{" "}
@@ -85,10 +86,10 @@ export function Capability() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
-          <div className="max-w-lg text-base/7 text-white lg:col-span-4">
+          <div className="max-w-lg text-base/7 text-white lg:col-span-4 my-28">
             <svg
               aria-hidden="true"
-              className="absolute -top-160 left-1 -z-10 h-256 w-702 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)] stroke-gray-900/10"
+              className="absolute -top-160 left-1 -z-10 h-256 w-702 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)] stroke-white/10"
             >
               <defs>
                 <pattern
@@ -109,11 +110,11 @@ export function Capability() {
             </svg>
             <FadeIn>
               <figure className="border-l border-indigo-600 pl-8">
-                <p className="mt-2 mb-4 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
+                <p className="mt-2 mb-4 text-3xl font-semibold tracking-tight text-pretty text-white sm:text-3xl lg:text-balance">
                   Capabilities
                 </p>
 
-                <blockquote className="text-xl/8 tracking-tight text-white">
+                <blockquote className="text-base tracking-tight text-white">
                   <p>
                     Our team includes <b>LLM architects, data engineers,</b> and{" "}
                     <b>prompt engineers</b> — specialists{" "}
@@ -164,31 +165,36 @@ export function Capability() {
                 </li>
               ))}
             </ul> */}
-            <ul
-              role="list"
-              className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-            >
-              {deployments.map((deployment) => (
-                <li key={deployment.id}>
-                  <div className="lg:pr-4 group">
-                    <div className="relative overflow-hidden rounded-3xl hover:shadow-lg hover:shadow-[#224fa2]/80 transition-shadow duration-300">
-                      <img
-                        src={deployment.imageUrl}
-                        alt="AI Illustration"
-                        className="aspect-14/13 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5"
-                      />
+            <FadeIn>
+              <ul
+                role="list"
+                className="mx-auto grid max-w-2xl grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3"
+              >
+                {deployments.map((deployment) => (
+                  <li
+                    key={deployment.id}
+                    className="bg-gray-800 p-2 rounded-lg h-48 lg:h-40"
+                  >
+                    <div className="lg:pr-4 group">
+                      <div className="relative overflow-hidden rounded-3xl">
+                        <img
+                          src="https://turing.cdn.prismic.io/turing/ZgamSct2UUcvBRdX_data-analytics-blue.svg?fit=max&w=96"
+                          alt="AI Illustration"
+                          className="aspect-14/13 rounded-2xl object-cover h-6 w-auto"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <h3 className="mt-2 text-lg/8 font-semibold tracking-tight text-white">
-                    {deployment.teamName}
-                  </h3>
-                  <p className="text-sm/6 text-white">
-                    {deployment.description}
-                  </p>
-                </li>
-              ))}
-            </ul>
-            <div
+                    <h3 className="mt-2 text-base font-semibold tracking-tight text-white">
+                      {deployment.teamName}
+                    </h3>
+                    <p className="text-sm text-white">
+                      {deployment.description}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </FadeIn>
+            {/* <div
               aria-hidden="true"
               className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
             >
@@ -199,7 +205,7 @@ export function Capability() {
                 }}
                 className="aspect-1318/752 w-329.5 flex-none bg-linear-to-r from-[#9fd6fc] to-[#224fa2] opacity-50"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
