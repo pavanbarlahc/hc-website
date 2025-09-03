@@ -173,7 +173,7 @@ export function Capability() {
                 {deployments.map((deployment) => (
                   <li
                     key={deployment.id}
-                    className="bg-gray-800 p-2 rounded-lg h-48 lg:h-40"
+                    className="bg-gray-800 p-2 rounded-lg h-52 lg:h-40"
                   >
                     <div className="lg:pr-4 group">
                       <div className="relative overflow-hidden rounded-3xl">
@@ -194,7 +194,7 @@ export function Capability() {
                 ))}
               </ul>
             </FadeIn>
-            {/* <div
+            <div
               aria-hidden="true"
               className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
             >
@@ -205,7 +205,7 @@ export function Capability() {
                 }}
                 className="aspect-1318/752 w-329.5 flex-none bg-linear-to-r from-[#9fd6fc] to-[#224fa2] opacity-50"
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

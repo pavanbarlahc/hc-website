@@ -88,7 +88,7 @@ export function Header() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -97,7 +97,7 @@ export function Header() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 font-semibold text-white shadow-xs hover:bg-[#3a67ba] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-lg bg-[#224fa2] px-3 py-[4px] text-sm/6 text-white shadow-xs hover:bg-[#3a67ba] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Contact Us
                 </a>

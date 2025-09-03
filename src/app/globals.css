@@ -240,3 +240,17 @@ body {
   width: max-content; /* shrink to fit children */
   animation: marquee 20s linear infinite; /* adjust speed */
 }
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* move left by half so loop looks seamless */
+  }
+}
+
+.animate-scrollText {
+  display: inline-flex;
+  animation: scrollText 60s linear infinite;
+}

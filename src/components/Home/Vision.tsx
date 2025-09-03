@@ -31,7 +31,7 @@ export function Vision() {
                 <div className="">
                   <div className="relative overflow-hidden rounded-xl">
                     <img
-                      src="https://images.pexels.com/photos/8294678/pexels-photo-8294678.jpeg"
+                      src="https://images.pexels.com/photos/18619967/pexels-photo-18619967.jpeg"
                       alt="AI Illustration"
                       className="w-full h-140 rounded-xl"
                     />
