@@ -1,22 +1,34 @@
-'use client'
+"use client";
 
-import { createContext, useContext } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { createContext, useContext } from "react";
+import {
+  motion,
+  useReducedMotion,
+  type Variants,
+  type Transition,
+} from "framer-motion";
 
 // Context to track staggered group
-const FadeInStaggerContext = createContext(false)
+const FadeInStaggerContext = createContext(false);
 
 // Adjust viewport to trigger animations when element is partially visible
-const viewport = { once: true, amount: 0.4 }
+const viewport = { once: true, amount: 0.4 };
 
 export function FadeIn(
-  props: React.ComponentPropsWithoutRef<typeof motion.div>,
+  props: React.ComponentPropsWithoutRef<typeof motion.div>
 ) {
-  const shouldReduceMotion = useReducedMotion()
-  const isInStaggerGroup = useContext(FadeInStaggerContext)
+  const shouldReduceMotion = useReducedMotion();
+  const isInStaggerGroup = useContext(FadeInStaggerContext);
 
   // Enhanced motion variants
-  const variants = {
+  const springTransition: Transition = {
+    type: "spring",
+    stiffness: 80,
+    damping: 20,
+    duration: 0.6,
+  };
+
+  const variants: Variants = {
     hidden: {
       opacity: 0,
       y: shouldReduceMotion ? 0 : 30,
@@ -26,14 +38,9 @@ export function FadeIn(
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        type: 'spring',
-        stiffness: 80,
-        damping: 20,
-        duration: 0.6,
-      },
+      transition: springTransition,
     },
-  }
+  };
 
   return (
     <motion.div
@@ -42,12 +49,12 @@ export function FadeIn(
         ? {}
         : {
             initial: "hidden",
-            whileInView: 'visible',
+            whileInView: "visible",
             viewport,
           })}
       {...props}
     />
-  )
+  );
 }
 
 export function FadeInStagger({
@@ -69,5 +76,5 @@ export function FadeInStagger({
         {children}
       </motion.div>
     </FadeInStaggerContext.Provider>
-  )
+  );
 }

@@ -75,30 +75,31 @@ export function Hero() {
         </a>
       </Container>
       <FadeIn>
-      <Container className="py-20 text-center bg-gray-50 overflow-hidden">
-  <div className="mt-0">
-    <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
-      AI-First Product Engineering Partner
-    </p>
+        <Container className="py-20 text-center bg-gray-50 overflow-hidden">
+          <div className="mt-0">
+            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl lg:text-balance">
+              AI-First Product Engineering Partner
+            </p>
 
-    <div className="relative w-full overflow-hidden mt-8">
-      <ul role="list" className="marquee gap-x-12">
-        {/* duplicate the list back-to-back */}
-        {[...aiPartners.flat(), ...aiPartners.flat()].map((company, i) => (
-          <li key={company.name + i} className="flex px-6">
-            <Image
-              src={company.logo}
-              alt={company.name}
-              unoptimized
-              className="h-12 w-auto"
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-</Container>
-
+            <div className="relative w-full overflow-hidden mt-8">
+              <ul role="list" className="marquee gap-x-12">
+                {/* duplicate the list back-to-back */}
+                {[...aiPartners.flat(), ...aiPartners.flat()].map(
+                  (company, i) => (
+                    <li key={company.name + i} className="flex px-6">
+                      <Image
+                        src={company.logo}
+                        alt={company.name}
+                        unoptimized
+                        className="h-12 w-auto"
+                      />
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+          </div>
+        </Container>
       </FadeIn>
     </>
   );

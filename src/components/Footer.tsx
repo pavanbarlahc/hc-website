@@ -100,13 +100,7 @@ export function Footer() {
         <FadeIn>
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             {/* Top area: Blocks */}
-            <div
-              className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${
-                true
-                  ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]"
-                  : ""
-              }`}
-            >
+            <div className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12`}>
               {/* 1st block */}
               <div className=" sm:col-span-12 lg:col-span-3">
                 <a href="#" className="">
@@ -118,7 +112,7 @@ export function Footer() {
                     unoptimized
                   />
                 </a>
-                <div className="text-sm text-gray-600">
+                <div className="text-sm text-gray-600 my-4">
                   <p>&copy; Copyright 2025 – All Rights</p>
                   <p>Reserved by Humancloud, Inc.</p>
                 </div>
@@ -130,7 +124,7 @@ export function Footer() {
                   Headquarters
                 </h3>
                 <p className="mt-4 font-semibold text-gray-900">California</p>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className="mt-2 text-sm text-gray-600">
                   800 West El Camino Real, Suite 180, <br />
                   Mountain View, CA – 94040
                 </p>
@@ -139,12 +133,12 @@ export function Footer() {
                   Development Centers
                 </h3>
                 <p className="mt-4 font-semibold text-gray-900">Pune</p>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className="mt-2 text-sm text-gray-600">
                   A-1102, MontClaire, Baner-Pashan <br />
                   Link Road, Pashan, Pune 411021.
                 </p>
                 <p className="mt-4 font-semibold text-gray-900">Hyderabad</p>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className="mt-2 text-sm text-gray-600">
                   Plot No.50, 1st Floor, Behind Raheja <br />
                   Mindspace, Gafoor Nagar Village, <br />
                   Madhapur, Hyderabad–500081
@@ -157,7 +151,7 @@ export function Footer() {
                   Contact Us
                 </h3>
                 <p className="mt-4 text-gray-900 font-semibold">Sales:</p>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className="mt-2 text-sm text-gray-600">
                   sales@humancloud.ltd
                   <br />
                   India: +91 85301 16304
@@ -167,13 +161,13 @@ export function Footer() {
                 <h3 className="text-xl text-gray-900 font-semibold">
                   Customer Care:
                 </h3>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className="mt-2 text-sm text-gray-600">
                   info@humancloud.ltd
                 </p>
                 <h3 className="text-xl text-gray-900 font-semibold">
                   Careers:
                 </h3>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className="mt-2 text-sm text-gray-600">
                   India: +91 84829 37528
                   <br />
                   talent@humancloud.ltd
@@ -181,15 +175,15 @@ export function Footer() {
               </div>
 
               {/* 4th block */}
-              <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
+              <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
                 <h3 className="text-xl text-gray-900 font-semibold">
                   Quick Links
                 </h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul role="list" className="mt-4">
                   <li>
                     <a
                       href="#"
-                      className="text-sm font-normal text-gray-700 hover:text-white"
+                      className="text-sm font-normal text-gray-600 hover:text-white"
                     >
                       About Us
                     </a>
@@ -197,7 +191,7 @@ export function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-sm font-normal text-gray-700 hover:text-white"
+                      className="text-sm font-normal text-gray-600 hover:text-white"
                     >
                       Contact Us
                     </a>
@@ -205,7 +199,7 @@ export function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-sm font-normal text-gray-700 hover:text-white"
+                      className="text-sm font-normal text-gray-600 hover:text-white"
                     >
                       Blog
                     </a>
@@ -213,7 +207,7 @@ export function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-sm font-normal text-gray-700 hover:text-white"
+                      className="text-sm font-normal text-gray-600 hover:text-white"
                     >
                       Careers
                     </a>
@@ -221,7 +215,7 @@ export function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-sm font-normal text-gray-700 hover:text-white"
+                      className="text-sm font-normal text-gray-600 hover:text-white"
                     >
                       Privacy Policy
                     </a>
@@ -229,7 +223,7 @@ export function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="text-sm font-normal text-gray-700 hover:text-white"
+                      className="text-sm font-normal text-gray-600 hover:text-white"
                     >
                       Terms & Conditions
                     </a>
@@ -317,7 +311,7 @@ export function Footer() {
 
             {/* Glow */}
             <div
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/2"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3"
               aria-hidden="true"
             >
               <div className="h-32 w-32 sm:h-40 sm:w-40 md:h-56 md:w-56 rounded-full border-[20px] border-blue-700 blur-[80px] will-change-[filter]"></div>
